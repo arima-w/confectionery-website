@@ -263,8 +263,9 @@
 }
 
 .bottom-clouds {
-    grid-row-start: 4;
-    grid-row-end: 6;
+    margin-top: 15px;
+    grid-row-start: -1;
+    grid-row-end: -3;
     grid-column-start: 1;
     grid-column-end: 7;
     background-image: url(/images/02\ 1\ \(2\).png);
@@ -351,34 +352,97 @@
     margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-.section-3 {
+.questions {
     width: 1345px;
     height: 595px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
+
+.questions-image {
+    border-radius: 50%;
+    width: 410px;
+    height: 410px;
+    background-color: #FED84C;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    margin-bottom: 30px;
+    background-image: url(/images/woman\ 2\ \(1\).png);
+    background-position: center, bottom;
+    background-repeat: no-repeat;
+    
+}
+
+.questions-text {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.text-blok {
+    font-family: Montserrat;
+    font-size: 11px;
+    margin-top: 60px;
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 135px;
+    height: 25px;
+    background-color: #F2F6FA;
+    border-radius: 5px;
+}
+
+.questions-title {
+    font-family: Montserrat;
+    font-size: 33px;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: #2E363E;
+}
+
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 13px;
+    padding-left: 45px;
+    padding-top: 30px;
+    line-height: 19px;
+}
+
+.questions-button {
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 210px;
+    height: 63px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500px;
+    background-color: #FED84C;
+    border: none;
+    border-radius: 6px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-4 {
     width: 1345px;
