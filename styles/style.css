@@ -1,14 +1,21 @@
 .header {
     width: 1345px;
     height: 900px;
-    background-image: url(/images/bg.jpg);
     background-size: 1345px;
     background-position: right;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    position: relative;
+    background-image: url(/images/bg.jpg);
 }
 
+.header-image {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
 .header-text {
     font-family: Montserrat;
     color: #FFFFFF;
@@ -72,6 +79,7 @@
     font-family: Montserrat;
     font-size: 11px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .button-2 {
@@ -82,6 +90,7 @@
     margin-top: 10px;
     border-radius: 5px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .div-title {
@@ -197,6 +206,7 @@
     background-color: #FED84C;
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
 }
 
 .TheCreamCastle {
@@ -271,6 +281,7 @@
     background-image: url(/images/02\ 1\ \(2\).png);
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
 .arm {
@@ -302,6 +313,7 @@
     height: 28px;
     width: 160px;
     background-color: #F2F6FA;
+    cursor: pointer;
 }
 
 .informationBlock-title {
@@ -330,6 +342,7 @@
     height: 65px;
     background-color: #FED84C;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .berry {
@@ -425,32 +438,125 @@
     background-color: #FED84C;
     border: none;
     border-radius: 6px;
-
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section-4 {
+.reviews {
     width: 1345px;
     height: 1073px;
 }
 
+.reviews-title {
+    font-size: 33px;
+    text-align: center;
+}
+
+.reviews-text {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 60px;
+    
+}
+
+.reviews-card {
+    width: 445px;
+    height: 310px;
+    margin-bottom: 2px;
+}
+
 .footer {
+    margin-top: 2px;
     width: 1345px;
     height: 643px;
-    background-color: red;
+    background-color: #081130;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.cloud {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.form {
+    background-color: #FFFFFF;
+    margin-top: -22px;
+    margin-left: 35px;
+    width: 825px;
+    height: 275px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.form-title {
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: bolder;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.form-text {
+    font-family: Montserrat;
+    font-size: 15px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.input {
+    width: 265px;
+    height: 58px;
+    background-color: #F2F6FA;
+    border: none;
+    margin-top: 28px;
+    margin-left: 140px;
+    font-size: 12px;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+.form-button {
+    margin-top: 28px;
+    margin-left: 10px;
+    width: 268px;
+    height: 60px;
+    font-size: 13px;
+    background-color: #FED84C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 8px;
+    color: #7E868E;
+    gap: 38px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 8px;
+    color: #7E868E;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-bottom: 57px;
+    margin-left: 50px;
 }
