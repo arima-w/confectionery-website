@@ -1,13 +1,12 @@
 .header {
-    width: 1345px;
-    height: 900px;
-    background-size: 1345px;
+    width: 100%;
+    min-height: 1294px;
     background-position: right;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     position: relative;
-    background-image: url(/images/bg.jpg);
+    background-image: url(../images/bg.png);
 }
 
 .header-image {
@@ -20,41 +19,54 @@
     font-family: Montserrat;
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 21px;
     justify-self: flex-end;
-    padding-right: 60px;
-    padding-top: 35px;
+    padding-right: 70px;
+    padding-top: 50px;
 }
 
 .street {
     font-family: Montserrat;
     color: #FFFFFF;
-    font-weight: 500;
-    font-size: 10px;
-    justify-self: flex-end;
-    padding-top: 33px;
-    padding-right: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    justify-self: center;
+    padding-top: 48px;
+    padding-right: 100px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    line-height: 18px;
 }
 
 .address {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 5px;
     color: #FFFFFF;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: flex-start;
+    padding-left: 75px;
+    padding-top: 13px;
 }
 
 .number {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     padding-left: 65px;
     padding-top: 28px;
+    font-style: normal;
 }
 
 .time {
     font-family: Montserrat;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 400;
     padding-left: 60px;
 }
@@ -64,8 +76,6 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    justify-self: center;
-    padding-top: 35px;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -74,41 +84,56 @@
 .button-1 {
     background-color: #F2F6FA;
     border-radius: 5px;
-    width: 95px;
-    height: 30px;
+    width: 135px;
+    height: 40px;
     font-family: Montserrat;
     font-size: 11px;
     font-weight: 400;
+    text-transform: uppercase;
     cursor: pointer;
+    align-self: center;
+    margin-right: 365px;
+    margin-top: 47px;
+    border: none;
 }
 
 .button-2 {
     background-color: #FED84C;
     color: #2E363E;
-    width: 197px;
-    height: 65px;
+    width: 280px;
+    height: 93px;
     margin-top: 10px;
-    border-radius: 5px;
-    font-size: 13px;
+    border-radius: 10px;
+    font-size: 18px;
     cursor: pointer;
+    align-self: center;
+    margin-right: 220px;
+    margin-top: 25px;
+    border: none;
 }
 
 .div-title {
     font-family: Montserrat;
     color: #F2F6FA;
-    font-size: 30px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 40px;
+    line-height: 60px;
+    align-self: center;
+    padding-top: 10px;
+    padding-left: 95px;
 }
 
 .div-text {
     font-family: Montserrat;
     color: #F2F6FA;
-    font-size: 15px;
     font-weight: 400;
-    line-height: 27px;
-    font-size: 18px;
+    line-height: 34.32px;
+    font-size: 24px;
     margin-top: 5px;
+    align-self: center;
+    padding-right: 40px;
+    padding-top: 3px;
 }
 
 .button-right-text{
@@ -119,10 +144,10 @@
     grid-column-end: 3;
     align-self: flex-end;
     color: #FFFFFF;
-    padding-left: 25px;
-    padding-bottom: 15px;
-    line-height: 18px;
-    font-size: 10px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    font-size: 15px;
 }
 
 .header-bottom-text {
@@ -133,31 +158,37 @@
     align-self: flex-end;
     justify-self: center;
     font-family: Montserrat;
-    font-size: 33px;
-    font-weight: 900;
-    padding-left: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 40px;
 }
 
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .section-card {
-    width: 1345px;
-    height: 1295px;
+    align-self: center;
+    min-width: 1180px;
+    min-height: 1926px;
     background-color: #FFFFFF;
     margin-bottom: 20px;
 }
 
 .card-list {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     list-style-type: none;
     flex-wrap: wrap;
-    padding-left: 260px;
-    padding-right: 100px;
-    padding-top: 60px;
+    padding-left: 370px;
+    padding-right: 200px;
+    padding-top: 80px;
 }
 
 .card {
-    width: 265px;
-    height: 405px;
+    width: 380px;
+    height: 582px;
     margin-bottom: 1px;
     background-color: #FFFFFF;
     border: 1px solid #F2F6FA;
@@ -166,97 +197,98 @@
 
 .card-image {
     border-radius: 5px 5px 0 0;
-    width: 265px;
-    height: 170px;
+    width: 380px;
+    height: 245px;
 }
 
 .card-title {
     font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    padding-top: 34px;
-    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 42px;
 }
 
 .card-text {
     font-family: Montserrat;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 400;
-    padding-top: 11px;
-    padding-left: 32px;
+    padding-top: 15px;
+    padding-left: 40px;
     padding-right: 60px;
-    line-height: 15px;
+    line-height: 24px;
 }
 
 .card-price {
     font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 900;
-    padding-top: 22px;
-    padding-left: 35px;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 27px;
+    padding-left: 42px;
 }
 
 .card-button {
     font-family: Montserrat;
-    width: 115px;
-    height: 47px;
-    margin-left: 32px;
-    margin-top: 15px;
-    font-size: 13px;
+    width: 163px;
+    height: 68px;
+    margin-left: 43px;
+    margin-top: 20px;
+    font-size: 18px;
     background-color: #FED84C;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
+    border: none;
 }
 
 .TheCreamCastle {
-    background-image: url(/images/img\ \(3\).jpg);
+    background-image: url(../images/img\ \(16\).png);
     background-position: center;
 }
 
 .RaspberryParadise {
-    background-image: url(/images/img\ \(2\).jpg);
+    background-image: url(../images/img\ \(17\).png);
     background-position: center;
 }
 
 .Firework {
-    background-image: url(/images/img.png);
+    background-image: url(../images/img\ \(18\).png);
     background-position: center;
 }
 
 .TheChocolateWorld {
-    background-image: url(/images/img\ \(1\).png);
+    background-image: url(../images/img\ \(19\).png);
     background-position: center;
 }
 
 .TearsDragon {
-    background-image: url(/images/img\ \(2\).png);
+    background-image: url(../images/img\ \(20\).png);
     background-position: center;
 }
 
 .SummerFantasy {
-    background-image: url(/images/img\ \(3\).png);
+    background-image: url(../images/img\ \(21\).png);
     background-position: center;
 }
 
 .CapeMadness {
-    background-image: url(/images/img\ \(4\).png);
+    background-image: url(../images/img\ \(22\).png);
     background-position: center;
 }
 
 .CloudFairyTale {
-    background-image: url(/images/img\ \(5\).png);
+    background-image: url(../images/img\ \(23\).png);
     background-position: center;
 }
 
 .TheDarkKnight {
-    background-image: url(/images/img\ \(6\).png);
+    background-image: url(../images/img\ \(24\).png);
     background-position: center;
 }
 
 .makingAnOrder {
-    width: 1345px;
-    height: 930px;
+    width: 100%;
+    min-height: 1352px;
     background-color: #081130;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -269,19 +301,18 @@
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 7;
-    background-image: url(/images/01\ 1.png);
+    background-image: url(../images/01\ 1\ \(1\).png);
 }
 
 .bottom-clouds {
-    margin-top: 15px;
+    margin-top: 52px;
     grid-row-start: -1;
     grid-row-end: -3;
     grid-column-start: 1;
     grid-column-end: 7;
-    background-image: url(/images/02\ 1\ \(2\).png);
+    background-image: url(../images/02\ 1\ \(3\).png);
     position: relative;
     z-index: 1;
-    cursor: pointer;
 }
 
 .arm {
@@ -289,7 +320,7 @@
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 5;
-    background-image: url(/images/phone\ 1.png);
+    background-image: url(../images/phone\ 1\ \(2\).png);
     position: relative;
     z-index: 0;
     margin-bottom: 5px;
@@ -301,48 +332,54 @@
     grid-row-start: 2;
     grid-row-end: 5;
     grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-end: 7;
     color: #FFFFFF;
 }
 
 .informationBlock-button-top {
     font-family: Montserrat;
-    font-size: 10px;
-    margin-top: 97px;
-    margin-left: 75px;
-    height: 28px;
-    width: 160px;
-    background-color: #F2F6FA;
+    font-size: 11px;
+    margin-top: 60px;
+    margin-left: 145px;
+    height: 37px;
+    width: 226px;
+    background-color: white;
     cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    
 }
 
 .informationBlock-title {
     font-family: Montserrat;
-    padding-left: 77px;
-    padding-top: 17px;
-    font-size: 33px;
+    padding-left: 142px;
+    padding-top: 25px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 60px;
 }
 
 .informationBlock-text {
     font-family: Montserrat;
-    font-size: 15px;
-    padding-left: 77px;
-    padding-top: 15px;
-    line-height: 20px;
+    font-size: 21px;
+    font-weight: 400;
+    padding-left: 145px;
+    padding-top: 20px;
+    line-height: 30px;
 }
 
 .informationBlock-button-bottom {
     font-family: Montserrat;
-    font-size: 13px;
-    margin-top: 30px;
-    margin-left: 75px;
-    width: 225px;
-    height: 65px;
+    font-size: 18px;
+    margin-top: 43px;
+    margin-left: 145px;
+    width: 320px;
+    height: 88px;
     background-color: #FED84C;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    border: none;
 }
 
 .berry {
@@ -350,7 +387,7 @@
     grid-row-end: 3;
     grid-column-start: 6;
     grid-column-end: 7;
-    background-image: url(/images/berry\ \(1\).png);
+    background-image: url(../images/berry\ \(1\).png);
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -360,38 +397,40 @@
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
-    background-image: url(/images/leaf.png);
+    background-image: url(../images/leaf.png);
     background-repeat: no-repeat;
     margin-top: 30px;
 }
 
 .questions {
-    width: 1345px;
-    height: 595px;
+    width: 100%;
+    min-height: 830px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
+    margin-top: 10px;
 }
 
 .questions-image {
     border-radius: 50%;
-    width: 410px;
-    height: 410px;
+    width: 580px;
+    height: 580px;
     background-color: #FED84C;
     grid-column-start: 4;
     grid-column-end: 6;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 8;
-    margin-bottom: 30px;
-    background-image: url(/images/woman\ 2\ \(1\).png);
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 15px;
     background-position: center, bottom;
     background-repeat: no-repeat;
-    
+    background-image: url(../images/woman\ 2\ \(2\).png);
 }
 
 .questions-text {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 7;
 }
@@ -399,41 +438,46 @@
 .text-blok {
     font-family: Montserrat;
     font-size: 11px;
-    margin-top: 60px;
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
-    width: 135px;
-    height: 25px;
+    padding-top: 10px;
+    margin-left: 55px;
+    text-align: center;
+    width: 200px;
+    height: 37px;
     background-color: #F2F6FA;
     border-radius: 5px;
 }
 
 .questions-title {
     font-family: Montserrat;
-    font-size: 33px;
-    padding-left: 30px;
-    padding-top: 20px;
+    font-size: 48px;
+    font-weight: 900;
+    padding-left: 60px;
     color: #2E363E;
+    line-height: 60px;
 }
 
 .questions-list {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    font-size: 13px;
-    padding-left: 45px;
-    padding-top: 30px;
-    line-height: 19px;
+    gap: 30px;
+    font-size: 18px;
+    padding-left: 82px;
+    padding-top: 35px;
+    line-height: 27px;
+}
+
+.questions-list-item::marker {
+    color: #5D6AFB;
+    font-size: 15px;
 }
 
 .questions-button {
-    margin-top: 40px;
-    margin-left: 30px;
-    width: 210px;
-    height: 63px;
+    margin-top: 52px;
+    margin-left: 60px;
+    width: 299px;
+    height: 88px;
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500px;
     background-color: #FED84C;
     border: none;
